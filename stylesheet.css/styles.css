@@ -4,18 +4,21 @@ body {
     background-color: rgb(196, 194, 189);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .box {
     display: grid;
-    position: relative;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 20px;
-    margin-left: 500px;
-    margin-top: 50px;
     color: aliceblue;
 }
 
-div {
+.box div {
     width: 50px;
     height: 50px;
     background-color: grey;
@@ -31,10 +34,14 @@ div {
     background-color: red;
 }
 
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 button {
-    position: absolute;
-    margin-left: 380px;
-    margin-top: 450px;
     width: 501px;
     height: 92px;
     background: #44D3A8;
@@ -46,6 +53,14 @@ button {
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
+}
+
+button::before {
+    
+}
+
+button::after {
+    
 }
 
 
