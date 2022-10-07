@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 body {
-    background-color: rgb(196, 194, 189);
+    background-color: rgb(245, 247, 248);
 }
 
 main {
@@ -42,6 +42,9 @@ main {
 }
 
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 501px;
     height: 92px;
     background: #44D3A8;
@@ -53,15 +56,51 @@ button {
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
+    position: relative;
 }
 
 button::before {
-    
+    content: "";
+    width: 200px;
+    height: 24px;
+    border: 2px solid #C4C4C4;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    z-index: -1;
 }
 
 button::after {
-    
+    content: "";
+    width: 200px;
+    height: 24px;
+    border: 2px solid #C4C4C4;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    z-index: -1;
 }
 
+button:hover::before {
+    content: "";
+    width: 200px;
+    height: 24px;
+    border: 2px solid #C4C4C4;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    left: -300px;
+}
+
+button:hover::after {
+    content: "";
+    width: 200px;
+    height: 24px;
+    border: 2px solid #C4C4C4;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    right: -300px;
+}
 
 
